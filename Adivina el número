@@ -1,0 +1,19 @@
+import random
+sec = random.randint(1,20)
+intentosrealizados = 0
+intentosmaximos = 6
+x = 0
+while(intentosrealizados < intentosmaximos):
+    intentosrealizados = intentosrealizados+1
+    print('ingresar un numero')
+    x=int(input("-->"))
+    if (x>sec):
+        print(x, 'es mayor que secreto')
+    else:
+        if (x<sec):
+            print(x, 'es menor que secreto')
+        else:
+            if (x==sec):
+                break
+print('Felicidades, has adivinado, ', x, 'es igual a secreto')
+
